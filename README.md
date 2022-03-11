@@ -1,1 +1,1 @@
-# inspire
+# camphosts
