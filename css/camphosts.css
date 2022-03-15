@@ -88,5 +88,8 @@ h1 {
 	text-align: center;
 	white-space: nowrap;
 }
+.regbutton:hover {
+	background-color: #498633;
+}
 
 
