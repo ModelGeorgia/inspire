@@ -1,5 +1,5 @@
 # Partner Directory Tools
 
-Our setup steps are available for Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS).  We offer both Software as a Service (SaaS) hosting and support for companies implementing additions to the Core Components.  
+Setup steps are available for Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS).  The .NET/SQL backend is being integrated with Model.Earth environmental directory tools.  
 
-[ComponentCore.com](http://ComponentCore.com)  
+[ComponentCore.com](https://ComponentCore.com)  

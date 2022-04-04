@@ -89,6 +89,13 @@ h1 {
 	white-space: nowrap;
 }
 .regbutton:hover {
+	background-color: #3366cc;
+	text-decoration: none;
+}
+.regbutton-green {
+	background-color: #559944;
+}
+.regbutton-green:hover {
 	background-color: #498633;
 }
 
