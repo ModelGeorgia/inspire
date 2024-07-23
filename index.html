@@ -41,10 +41,10 @@ if (location.host.indexOf('componentcore') >= 0) {
 	}
 
 	h1 {
-		font-family: "Fira Sans";
+		font-familyX: "Fira Sans";
 	}
 	h2 {
-		font: 800 24px/30px "Fira Sans",Axiforma,"Gotham Pro",Arial,serif;
+		fontX: 800 24px/30px "Fira Sans",Axiforma,"Gotham Pro",Arial,serif;
 		font-weight: 400px;
 		colorX: #292d34;
 	}
@@ -110,7 +110,7 @@ $(document).ready(function () {
 
 <body style="margin:0px">
 
-<div class="header-navigation">
+<div class="header-navigation" style="background:#fff">
   <header class="" style="overflow:hidden">
 	
 	<div style="padding-left:30px; padding-right:30px">
@@ -133,18 +133,28 @@ $(document).ready(function () {
   </header>
 </div>
 
+
+
+<!-- img/home/being-green-with-text.jpg -->
 <div  style="position:relative">
-	<div id="crossfade"><img class="topX" src="img/home/being-green-with-text.jpg" style="opacity:0.95;width:100%;max-width:2000px" /></div>
-		<a href="#community"><img src="../localsite/img/icon/arrow/page-down.png" id="community" style="position:absolute; bottom:45px; left: 50%; width:64px; margin-left:-32px"></a>
+	<div id="crossfade"><img class="topX" src="img/home/dining.jpg" style="opacity:0.95;width:100%;max-width:2000px" /></div>
+		<a href="#community"><img src="../localsite/img/icon/arrow/page-down.png" style="position:absolute; bottom:45px; left: 50%; width:64px; margin-left:-32px"></a>
 </div>
 
 <div style="background:#aaa;clear:both;text-align:center;padding:40px 20px 50px 20px;color:#fff">
 	<div>
-	<p class="introTitle">Community <span style="white-space: nowrap;">Resources and Calendars</span></p><!-- Destination Marketing -->
+
+		<h1 style="color:#fff">Local Directories that Inspire Exploration!</h1>
+
+		<!--
+	<p class="introTitle">Community <span style="white-space: nowrap;">Resources and Calendars</span></p>
+		-->
+
+	<!-- Destination Marketing -->
 	<p style="font-size:15.5px">
 
 		<span style="line-height: 1em;">
-		Engage site visitors with destination highlights, image galleries, <span style="white-space: nowrap;">itinerary eNews, event calendars and more!</span><br>
+		Engage site visitors with destination highlights, image galleries, <span style="white-space: nowrap;">location eNews, event calendars and more!</span><br>
 		Our Partner Admin Tools are available for custom integration <span style="white-space: nowrap;">and expansion with approved developers.</span>
 		</span>
 
@@ -152,7 +162,7 @@ $(document).ready(function () {
 
 	<br>
 
-	<a href="#details" class="regbutton">Learn More</a> &nbsp; &nbsp;
+	<a href="#community" class="regbutton">Learn More</a> &nbsp; &nbsp;
 	<a href="contact" class="regbutton regbutton-green">Contact Us</a>
 	</p>
 	</div>
@@ -179,12 +189,12 @@ $(document).ready(function () {
 -->
 	
 <!-- 3 Column -->
-	<div class="container" style="margin-top:10px">
+	<div id="community" class="container" style="margin-top:10px">
 		<br>
 
-		<h1>Membership Management Tools</h1>
-		<div style="font-size: 16px;">ComponentCore is used by states and local communities for partner directories, enews, membership dues, inventory, shopping, reservation scheduling, resource listings and event calendars. <a href="/setup/">About&nbsp;Partner&nbsp;Directory&nbsp;Setup</a></div>
-		<br><br><br>
+		<h1>Collaborative Membership Management Tools</h1>
+		<div style="font-size: 16px;">ComponentCore is used by states and local communities for partner directories, news, members, inventory, shopping carts, reservations, resource listings and event calendars. <a href="/setup/">About&nbsp;Partner&nbsp;Directory&nbsp;Setup</a></div>
+		<br><br>
 
 	  <div class="footerColumn">
 			<div class="footerColumnInside">
@@ -233,8 +243,7 @@ $(document).ready(function () {
 	    </div>
 
 	    <div style="clear:both"></div>
-	    <br>
-
+	    
 
 	    <div class="footerColumn">
 				<div class="footerColumnInside">
@@ -265,21 +274,22 @@ $(document).ready(function () {
 
 	    	<p>
 	    		Use PayPal and Authorize.net with our<br>
-	    		shopping cart or background checks.
+	    		shopping cart and background checks.
 	    	</p>
 	    	</div>
 	    </div>
 
 	    <div style="clear:both"></div>
+	     
+	    <!--
 	    <br><br>
-	    
-
 			<div style="font-size: 16px;">
-			<a href="contact">Get in touch</a> - Our data solutions include Observable Framework, Open WebUI, CognitoForms, Google Sheets and DuckDB.<br><br><br>
 			
 			<span style="font-family: 'Fira Sans';font-size:17px">Tools in Action </span> &ndash;&nbsp;<a href="https://cameraready.georgia.org/">CameraReady Directory</a> | <a href="https://GlenwoodPark.com">Neighborhood Sites</a> | <span style="white-space: nowrap;"><a href="https://meddin.com/net/go/properties.aspx">Available Properties</a> | <a href="https://explore.gastateparks.org/volunteer/campground">Scheduling Timelines</a></span>
 
 			</div>
+			-->
+
 			<br>
 
 
@@ -302,8 +312,13 @@ $(document).ready(function () {
 	<div style="font-size: 16px; color:#fff;" class="container">
 		<div style="margin:60px 0px 60px 0px">
 			
+			Our partner admin tools help connect your site members to local resources and memorable adventures. <a href="contact">Get in touch</a>
+
+			<!--
 			Add <a href="/setup">Partner Management Tools</a> to your website.<br>
 			Explore environmental best practices in <a href="https://model.earth">model.earth</a>.<br>
+			-->
+
 			<!--
 			Our&nbsp;focus&nbsp;is&nbsp;on <a href="https://www.epa.gov/sustainable-management-food">The&nbsp;Sustainable Management&nbsp;of&nbsp;Food</a> and <a href="https://model.earth/localsite/map/#show=farmfresh">Farm Fresh Produce</a> to reduce delivery distances.
 			-->
