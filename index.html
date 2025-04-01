@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/png" href="img/home/leaf-32.png" />
 
-<title>Membership Management Tools</title>
+<title>Collaborative Partner Tools</title>
 <link type="text/css" rel="stylesheet" href="/localsite/css/base.css" id="/localsite/css/base.css" />
 <script type="text/javascript" src="/localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
-<script type="text/javascript" src="/localsite/js/localsite.js"></script>
+<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
 
 <!-- might switch to columns.css instead, from dport -->
 <link href="css/core-base.css" rel="stylesheet" type="text/css">
@@ -21,70 +21,93 @@
 
 <script>
 if (location.host.indexOf('componentcore') >= 0) {
-	// Not working
 	param.startTitle = "ComponentCore"	
 	document.title = "ComponentCore - " + document.title
 	param.titleArray = ["Compoent","Core"]	
 	//param.headerLogo = "<img src='/inspire/img/home/leaf-32.png' style='width:33px; margin-right:2px'>";
 	param.headerLogoSmall = "<img src='/inspire/img/home/leaf-32.png' style='width:33px; margin-right:2px'>";
-
 }
 
 </script>
 
 <style type='text/css'>
-	#headerbar, #local-header {
-		displayX: none;
-	}
-	.fullbackground:hover{
-	    height:550px;
-	}
+#headerbar, #local-header {
+	displayX: none;
+}
+.fullbackground:hover{
+    height:550px;
+}
 
-	h1 {
-		font-familyX: "Fira Sans";
-	}
-	h2 {
-		fontX: 800 24px/30px "Fira Sans",Axiforma,"Gotham Pro",Arial,serif;
-		font-weight: 400px;
-		colorX: #292d34;
-	}
+h1 {
+	font-familyX: "Fira Sans";
+}
+h2 {
+	fontX: 800 24px/30px "Fira Sans",Axiforma,"Gotham Pro",Arial,serif;
+	font-weight: 400px;
+	colorX: #292d34;
+}
+.introTitle {
+	font-family: 'Fira Sans';
+	font-size: 38px;
+	line-height: 42px;
+	color: #fcfcfc;
+}
+a:hover {
+	text-decoration: underline;
+}
+#crossfade {
+    position:relative;
+}
+#crossfade img {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
+}
+#crossfade img.top {
+	position:absolute;
+}
+#crossfade img.top:hover {
+	opacity:0;
+}
+#local-footer {
+	display: none;
+}
+#showSide {
+	display: none;
+}
+@media (max-width:800px) {
 	.introTitle {
-		font-family: 'Fira Sans';
-		font-size: 38px;
-		line-height: 42px;
-		color: #fcfcfc;
+			font-size: 28px;
 	}
-	a:hover {
-		text-decoration: underline;
+}
+#mainTitle {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	right: 6%;
+}
+@media (max-width:1000px) {
+	#mainTitle {
+		font-size: 24px;
+		right: 9%;
 	}
-	#crossfade {
-	    position:relative;
+}
+@media (max-width:800px) {
+	#mainTitle {
+		font-size: 18px;
+		right: 8%;
 	}
-	#crossfade img {
-	    opacity: 1;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    -ms-transition: opacity 1s ease-in-out;    
-	    transition: opacity 1s ease-in-out;
+	#titleTwo {
+		font-size: 24px;
 	}
-	#crossfade img.top {
-		position:absolute;
-	}
-	#crossfade img.top:hover {
-		opacity:0;
-	}
-	#local-footer {
+	#pageDownArrow {
 		display: none;
 	}
-	#showSide {
-		display: none;
-	}
-	@media (max-width:800px) {
-		.introTitle {
-				font-size: 28px;
-		}
-	}
+}
 </style>
 
 <script>
@@ -110,41 +133,19 @@ $(document).ready(function () {
 
 <body style="margin:0px">
 
-<div class="header-navigation" style="background:#fff">
-  <header class="" style="overflow:hidden">
-	
-	<div style="padding-left:30px; padding-right:30px">
-
-		<div style="margin-left:60px;min-height:12px">
-        
-    </div>
-		<div style="font-size:21px; padding:10px 0 30px 16px; float:left">
-			<img src="img/home/leaf-32.png" style="width:24px;margin-right:3px" /><a href="/inspire" style="color:#555">Component<span style="color:#1f651e">Core</span></a>
-  		</div>
-		
-	    <nav class="hideMobile" style="font-size: 18px; padding-top:25px; float:right; font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;">
-	    	 Membership Management Tools
-	    	 <!--
-		     Destination Marketing Directories
-		   	 -->
-	    </nav>
-
-	</div>
-  </header>
-</div>
-
-
-
-<!-- img/home/being-green-with-text.jpg -->
 <div  style="position:relative">
-	<div id="crossfade"><img class="topX" src="img/home/dining.jpg" style="opacity:0.95;width:100%;max-width:2000px" /></div>
-		<a href="#community"><img src="../localsite/img/icon/arrow/page-down.png" style="position:absolute; bottom:45px; left: 50%; width:64px; margin-left:-32px"></a>
+	<div id="crossfade"><img class="topX" src="img/home/being-green-with-text.jpg" style="opacity:0.95;width:100%;max-width:2000px" /></div>
+
+		<div id="mainTitle">Collaborative Partner Tools</div>
+
+		<a href="#community" id="pageDownArrow"><img src="../localsite/img/icon/arrow/page-down.png" style="position:absolute; bottom:45px; left: 50%; width:64px; margin-left:-32px"></a>
 </div>
 
 <div style="background:#aaa;clear:both;text-align:center;padding:40px 20px 50px 20px;color:#fff">
 	<div>
 
-		<h1 style="color:#fff">Local Directories that Inspire Exploration!</h1>
+		<!-- Local Directories that Inspire Exploration! -->
+		<h1 id="titleTwo" style="color:#fff; font-family: 'Nunito Sans', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;">Community Resources and&nbsp;Calendars</h1>
 
 		<!--
 	<p class="introTitle">Community <span style="white-space: nowrap;">Resources and Calendars</span></p>
@@ -154,8 +155,8 @@ $(document).ready(function () {
 	<p style="font-size:15.5px">
 
 		<span style="line-height: 1em;">
-		Engage site visitors with destination highlights, image galleries, <span style="white-space: nowrap;">location eNews, event calendars and more!</span><br>
-		Our Partner Admin Tools are available for custom integration <span style="white-space: nowrap;">and expansion with approved developers.</span>
+		Engage site visitors with location highlights, eNews, image galleries, <span style="white-space: nowrap;">event calendars and more!</span><br>
+		Our Partner Admin Tools are available for custom integration and expansion with <span style="white-space: nowrap;">approved developers.</span>
 		</span>
 
 	<br>
@@ -192,8 +193,9 @@ $(document).ready(function () {
 	<div id="community" class="container" style="margin-top:10px">
 		<br>
 
-		<h1>Collaborative Membership Management&nbsp;Tools</h1>
-		<div style="font-size: 16px;">ComponentCore's CRM/CMS tools are used by states and local communities for partner directories, news, members, inventory, shopping carts, reservations, resource listings and event calendars. <a href="/setup/">About&nbsp;Partner&nbsp;Directory&nbsp;Setup</a></div>
+		<h1>Directory and eNews&nbsp;Management</h1>
+
+		<div style="font-size: 16px;">Our partner resource management tools include reservations, resource listings, grant admin, shopping carts, event calendars and volunteer host management. <a href="/setup/">About&nbsp;Partner&nbsp;Directory&nbsp;Setup</a></div>
 		<br><br>
 
 	  <div class="footerColumn">
@@ -260,10 +262,10 @@ $(document).ready(function () {
 
 		<div class="footerColumn">
 			<div class="footerColumnInside">
-		    <h2>Available Openings</h2>
+		    <h2>ML Data Visualization</h2>
 		    <p>
-		    	Timelines with reservable openings<br>
-		    	for location and event reservations.<br>
+		    	Timelines with local impacts<br>
+		    	for location and industry analysis.<br>
 		    </p>
 		    </div>
 	    </div>
@@ -311,8 +313,16 @@ $(document).ready(function () {
 
 	<div style="font-size: 16px; color:#fff;" class="container">
 		<div style="margin:60px 0px 60px 0px">
+		
+		<div style="font-size: 16px;">
 			
-			Our partner admin tools help you connect your site members to local resources and memorable adventures. <a href="contact">Get in touch!</a>
+			
+			<span style="font-family: 'Fira Sans';font-size:17px">Tools in Action </span> –&nbsp;<a href="https://walker-foundation.org">Walker Foundation</a> | <a href="https://cameraready.georgia.org/">CameraReady Directory</a> | <a href="https://Glenwoodpark.com">Neighborhoods</a> | <a href="https://meddin.com/net/go/properties.aspx">Properties</a> | <a href="https://explore.gastateparks.org/volunteer/campground">Host Scheduling</a>
+
+			<!--
+			Our partner admin tools make listing management simple. <a href="contact">Get in touch!</a><br><br>
+			We also specialize in environmental impact <a href="/localsite/info/">Input-Output widgets</a>.
+			-->
 
 			<!--
 			Add <a href="/setup">Partner Management Tools</a> to your website.<br>
