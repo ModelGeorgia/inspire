@@ -1,7 +1,9 @@
 # Collaborative Partner Tools
 
-[Component Core Updates](https://dreamstudio.com/education/) - State Environmental Education
+[SuiteCRM Partner/Customer Relation Management](https://dreamstudio.com/profile/crm/) - Standard-based data structure
 
-[Setup steps](https://dreamstudio.com/setup/) are available for Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS). 
+[Education Resources](https://dreamstudio.com/education/) - Collaborative Data Science, RealityStream ML, Model.Earth Impacts
 
-Software as a Service (SaaS) hosting and support for Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS).
+[Azure and AWS Setup steps](https://dreamstudio.com/setup/) are available for Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS). 
+
+Software as a Service (SaaS) hosting and support for Microsoft Azure and Amazon AWS Cloud Hosting with Elastic Compute Cloud (EC2) and Relational Database Service (RDS).
