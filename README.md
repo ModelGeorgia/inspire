@@ -1,4 +1,4 @@
-# DreamStudio Collaborative Partner Tools
+# Collaborative Partner Tools
 
 [Component Core Updates](https://dreamstudio.com/education/) - State Environmental Education
 
